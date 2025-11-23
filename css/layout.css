@@ -1,0 +1,527 @@
+/*Variables */
+:root {
+  --primarycolor: #fefefe;
+  --secondarycolor: #3498db;
+  --tertiarycolor: #2c3e50;
+  --primaryoff: #dcdde1;
+  --purewhite: #fff;
+  --pureblack: #000;
+  --whitecolor: #fefefe;
+  --blackcolor: #202020;
+  --colorgreen: #76b852;
+  --acentcolor: #ffeb3b;
+  --colorblue: #0066cb;
+  --colorred: #eb062c;
+  --sectionpadding: 60px;
+}
+/* Rest */
+body {
+  font-family: "Poppins", sans-serif;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Geologica", sans-serif;
+}
+a:hover {
+  text-decoration: none;
+}
+h1 {
+  font-size: 100px;
+  font-weight: 900;
+}
+h2 {
+  font-size: 50px;
+  font-weight: 500;
+}
+h3 {
+  font-size: 30px;
+}
+h4 {
+  font-size: 20px;
+}
+h5 {
+  font-size: 15px;
+}
+h6 {
+  font-size: 12px;
+}
+/* General css */
+.content-wrapper {
+  position: relative;
+  z-index: 9999;
+}
+.section-padding {
+  padding: var(--sectionpadding) 0;
+}
+.section-padding-bottom {
+  padding-bottom: var(--sectionpadding);
+}
+.section-padding-top {
+  padding-top: var(--sectionpadding);
+}
+.no-padding {
+  padding: 0;
+}
+.no-padding-left {
+  padding-left: 0;
+}
+.no-padding-right {
+  padding-right: 0;
+}
+.color-black {
+  color: #000;
+}
+.color-offblack {
+  color: #999;
+}
+.color-red {
+  color: var(--colorred);
+}
+.color-blue {
+  color: var(--colorblue);
+}
+.color-white {
+  color: #fff !important;
+}
+.color-green {
+  color: var(--colorgreen);
+}
+
+.bg-green {
+  background-color: var(--colorgreen) !important;
+}
+.spacer-10 {
+  height: 10px;
+  width: 100%;
+}
+.spacer-20 {
+  height: 20px;
+  width: 100%;
+}
+.spacer-30 {
+  height: 30px;
+  width: 100%;
+}
+.spacer-40 {
+  height: 40px;
+  width: 100%;
+}
+.spacer-50 {
+  height: 50px;
+  width: 100%;
+}
+.spacer-60 {
+  height: 60px;
+  width: 100%;
+}
+.spacer-70 {
+  height: 70px;
+  width: 100%;
+}
+.spacer-80 {
+  height: 80px;
+  width: 100%;
+}
+.spacer-920 {
+  height: 900px;
+  width: 100%;
+}
+.spacer-100 {
+  height: 100px;
+  width: 100%;
+}
+.pt-10 {
+  padding-top: 10px;
+}
+.pt-20 {
+  padding-top: 20px;
+}
+.pt-30 {
+  padding-top: 30px;
+}
+.pt-40 {
+  padding-top: 40px;
+}
+.pt-50 {
+  padding-top: 50px;
+}
+.pt-60 {
+  padding-top: 60px;
+}
+.pt-70 {
+  padding-top: 70px;
+}
+.pt-80 {
+  padding-top: 80px;
+}
+.pt-90 {
+  padding-top: 90px;
+}
+.pt-100 {
+  padding-top: 100px;
+}
+.pb-10 {
+  padding-top: 10px;
+}
+.pb-20 {
+  padding-top: 20px;
+}
+.pb-30 {
+  padding-top: 30px;
+}
+.pb-40 {
+  padding-top: 40px;
+}
+.pb-50 {
+  padding-top: 50px;
+}
+.pb-60 {
+  padding-top: 60px;
+}
+.pb-70 {
+  padding-top: 70px;
+}
+.pb-80 {
+  padding-top: 80px;
+}
+.pb-90 {
+  padding-top: 90px;
+}
+.pb-100 {
+  padding-top: 100px;
+}
+/* Header */
+header h1 {
+  color: var(--purewhite);
+  font-size: 80px;
+  margin-bottom: 10px;
+}
+header h2 {
+  color: var(--purewhite);
+  font-size: 250px;
+  font-weight: 700;
+}
+
+/* GSAP Header */
+header {
+  background: url(../assets/images/cloud1.png) bottom center no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: visible;
+}
+main {
+  /* position: fixed; */
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.scrollDist {
+  position: relative;
+  width: 100%;
+  height: 200vh;
+  z-index: 1;
+}
+
+.tanhero h1 {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translateX(-50%);
+  z-index: 99999;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  color: #fff;
+  font-size: 5rem;
+  line-height: 5rem;
+  font-weight: 900;
+}
+
+.tanhero h2 {
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translateX(-50%);
+  z-index: 25;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  font-size: 15rem;
+  line-height: 15rem;
+  font-weight: 700;
+
+  /* Mesh Gradient Effect */
+  background: linear-gradient(
+    135deg,
+    #667eea 0%,
+    #764ba2 25%,
+    #f093fb 50%,
+    #4facfe 75%,
+    #00f2fe 100%
+  );
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+
+  /* Text Shadow for depth (using multiple shadows) */
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3))
+    drop-shadow(0 0 20px rgba(102, 126, 234, 0.5))
+    drop-shadow(0 0 40px rgba(118, 75, 162, 0.3));
+
+  /* Animation */
+  animation: gradientShift 8s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.flexContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+  transform: translateY(-20%);
+}
+.heroWrapper {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.tanhero {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 120vh;
+  top: 0;
+  left: 0;
+}
+
+.tanhero img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 120%;
+  object-fit: cover;
+  /* Hardware acceleration for smooth scrolling */
+  will-change: transform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+}
+
+img.sky {
+  z-index: 1;
+}
+
+img.mountBg {
+  z-index: 99;
+}
+
+img.mountMg {
+  z-index: 999;
+}
+
+img.cloud2 {
+  z-index: 9999;
+  top: -20%;
+}
+
+img.mountFg {
+  z-index: 9999;
+}
+
+img.cloud1 {
+  z-index: 9999;
+  bottom: 0 !important;
+  top: auto !important;
+  height: auto !important;
+  object-fit: contain;
+}
+
+img.cloud3 {
+  z-index: 9999;
+}
+
+/* Snow Effect */
+#snow-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 100000;
+}
+.snowflake {
+  position: absolute;
+  top: -10px;
+  background-color: white;
+  border-radius: 50%;
+  animation: fall linear infinite;
+}
+@keyframes fall {
+  0% {
+    transform: translateY(-10px) translateX(0);
+  }
+  100% {
+    transform: translateY(100vh) translateX(20px);
+  }
+}
+@keyframes fall-left {
+  0% {
+    transform: translateY(-10px) translateX(0);
+  }
+  100% {
+    transform: translateY(100vh) translateX(-40px);
+  }
+}
+@keyframes fall-right {
+  0% {
+    transform: translateY(-10px) translateX(0);
+  }
+  100% {
+    transform: translateY(100vh) translateX(60px);
+  }
+}
+@keyframes fall-diagonal {
+  0% {
+    transform: translateY(-10px) translateX(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(50vh) translateX(-30px) rotate(180deg);
+  }
+  100% {
+    transform: translateY(100vh) translateX(30px) rotate(360deg);
+  }
+}
+/* Content */
+.section-about {
+  background: url(../assets/images/cloud2way.png) top center no-repeat;
+  background-color: transparent;
+  background-size: cover;
+  margin-top: -400px;
+  padding: 600px 0 !important;
+  position: relative;
+  z-index: 9999;
+}
+
+/* Quote */
+.quote-block {
+  background: #efefef;
+  position: relative;
+  z-index: 999999;
+}
+
+/* Footer */
+footer {
+  background: #e2e2e2;
+}
+
+.footer-widget {
+  color: #000;
+}
+.footer-widget h3 {
+  margin-top: 0px;
+}
+.footer-widget ul li {
+  list-style: none;
+  line-height: 30px;
+}
+.footer-widget ul li a {
+  color: #000;
+}
+
+.btm-footer {
+  padding: 15px 0;
+  background: #000;
+}
+
+.copyright p {
+  margin-bottom: 0;
+}
+
+.powered {
+  float: right;
+}
+
+.scrollup {
+  /* color: #fff; */
+  padding: 10px;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  display: none;
+  background-color: #999;
+}
+
+/* responsive */
+.footer-button {
+  background: #000 none repeat scroll 0 0;
+  border-top: 1px solid #111;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  width: 100%;
+  z-index: 999999;
+  display: none;
+}
+.footer-bar {
+  margin: 0;
+  overflow: hidden;
+  padding-left: 0;
+}
+.footer-bar li {
+  border-right: 1px solid #111;
+  float: left;
+  list-style: outside none none;
+  padding: 8px 0;
+  text-align: center;
+  width: 25%;
+}
+.footer-bar li a {
+  color: #fff;
+  display: block;
+  text-decoration: none;
+}
+.footer-bar li {
+  list-style: outside none none;
+  text-align: center;
+}
+.footer_bar li i {
+  font-size: 18px;
+}
+.footer-button ul.footer-bar li:last-child {
+  border-right: none;
+}
