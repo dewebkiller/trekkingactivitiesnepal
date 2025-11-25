@@ -1,7 +1,7 @@
 /*Variables */
 :root {
-  --primarycolor: #fefefe;
-  --secondarycolor: #3498db;
+  --primarycolor: #f39;
+  --secondarycolor: #76b852;
   --tertiarycolor: #2c3e50;
   --primaryoff: #dcdde1;
   --purewhite: #fff;
@@ -16,7 +16,7 @@
 }
 /* Rest */
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Work Sans", sans-serif;
 }
 img {
   max-width: 100%;
@@ -29,7 +29,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Geologica", sans-serif;
+  font-family: "Lora", serif;
 }
 a:hover {
   text-decoration: none;
@@ -76,6 +76,9 @@ h6 {
 }
 .no-padding-right {
   padding-right: 0;
+}
+.color-primary {
+  color: var(--primarycolor);
 }
 .color-black {
   color: #000;
@@ -430,12 +433,22 @@ img.cloud3 {
   background: url(../assets/images/cloud2way.png) top center no-repeat;
   background-color: transparent;
   background-size: cover;
-  margin-top: -400px;
-  padding: 600px 0 !important;
+  margin-top: -300px;
+  padding: 600px 0 300px 0 !important;
   position: relative;
   z-index: 9999;
 }
-
+.section-about h2 {
+  font-weight: bold;
+  font-size: 60px;
+  margin-bottom: 40px;
+  color: var(--primaryoff);
+}
+.section-about p {
+  font-size: 35px;
+  font-weight: 600;
+  color: var(--primaryoff);
+}
 /* Quote */
 .quote-block {
   background: #efefef;

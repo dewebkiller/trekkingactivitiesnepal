@@ -93,6 +93,7 @@
 <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
 <script src="https://unpkg.com/gsap@3/dist/ScrollToPlugin.min.js"></script>
 <script src="https://unpkg.com/gsap@3/dist/TextPlugin.min.js"></script>
+<script src="https://assets.codepen.io/16327/SplitText3.min.js"></script>
 <script src="
 https://cdn.jsdelivr.net/npm/lenis@1.3.15/dist/lenis.min.js
 "></script>

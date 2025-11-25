@@ -35,7 +35,7 @@ $(document).ready(function () {
 
   createSnowflakes();
 
-  // GSAP Parallax Animation
+  // GSAP Hero Parallax Animation
   gsap
     .timeline({
       scrollTrigger: {
@@ -43,7 +43,7 @@ $(document).ready(function () {
         start: "top top",
         end: "bottom top",
         scrub: 0.5,
-        markers: true,
+        markers: false,
       },
     })
     .fromTo(".sky", { y: 0 }, { y: -300 }, 0)
@@ -55,4 +55,43 @@ $(document).ready(function () {
     .fromTo(".cloud3", { y: 0 }, { y: -150 }, 0)
     .fromTo("tanhero h1", { y: 0 }, { y: 100 }, 0)
     .fromTo("tanhero h2", { y: 0 }, { y: 100 }, 0);
+
+  // GSAP About fading animation
+  const defaultColor = "#eee"; // grey
+  const divHighlight = "#333"; // white
+  const spanHighlight = "#f39"; // bright pink
+  const quoteSplit = SplitText.create(".quote h2, .quote p", {
+    type: "words",
+  });
+
+  const numWords = quoteSplit.words.length;
+
+  const tl = gsap.timeline();
+
+  quoteSplit.words.forEach((word, index) => {
+    tl.call(animateWord, [word], index * 1 + 0.01);
+  });
+
+  tl.set({}, {}, "+=0.01");
+
+  function animateWord(word) {
+    console.log(word.parentElement.nodeName);
+    if (st.direction == 1) {
+      if (word.parentElement.nodeName == "P") {
+        gsap.to(word, { color: divHighlight });
+      } else {
+        gsap.to(word, { color: spanHighlight });
+      }
+    } else {
+      gsap.to(word, { color: defaultColor });
+    }
+  }
+
+  let st = ScrollTrigger.create({
+    trigger: ".quote",
+    start: "top 80%",
+    end: "center 50%",
+    scrub: true,
+    animation: tl,
+  });
 });
