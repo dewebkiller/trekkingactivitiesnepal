@@ -94,4 +94,25 @@ $(document).ready(function () {
     scrub: true,
     animation: tl,
   });
+
+  // Image Zoom Out Animation
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.fromTo(
+    ".content-image img",
+    {
+      scale: 1.5,
+    },
+    {
+      scale: 1,
+      duration: 1.5,
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: ".content-image",
+        start: "top bottom",
+        markers: true,
+        scrub: true,
+      },
+    }
+  );
 });

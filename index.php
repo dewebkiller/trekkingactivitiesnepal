@@ -1,5 +1,5 @@
 <?php include_once('header.php'); ?>
-<section class="content-wrapper section-padding section-about">
+<section class="content-wrapper section-padding section-especialize">
   <div class="container">
     <div class="row">
       <div class="col-lg-10 offset-lg-1 text-center">
@@ -14,20 +14,28 @@
     </div>
   </div>
 </section>
-<section class="section-padding quote-block">
+<section class="section-padding section-about">
   <div class="container">
-    <div class="row">
-      <div class="col-lg-8">
-        <div class="quote">
-          <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.</h3>
+    <div class="row d-flex align-items-center">
+      <div class="col-lg-6 pe-5">
+        <div class="wysiwyg-content">
+          <div class="capsule">
+            <p>Explore the extraordinary</p>
+          </div>
+          <h2>Experience the allure of Spain and Portugal</h2>
+          <p>At Made for Spain & Portugal, we craft bespoke luxury journeys shaped by 26 years of unparalleled expertise
+            and a deep understanding of the soul and traditions of Spain and Portugal. Every moment is carefully
+            curated, revealing places and experiences known only to cultivated, well-connected locals. Discover the true
+            essence of these lands through a journey tailored uniquely for you. Vivamus maximus magna quis accumsan
+            tempor. </p>
         </div>
       </div>
-      <div class="col-lg-4" data-aos="fade-up">
-        <div class="quote-btn">
-          <a href="#" class="btn btn-success btn-lg">Request a quote</a>
+      <div class="col-lg-6">
+        <div class="content-image">
+          <img src="assets/images/trekkingactivities.jpg" alt="Content Image">
         </div>
       </div>
+
     </div>
   </div>
 </section>
