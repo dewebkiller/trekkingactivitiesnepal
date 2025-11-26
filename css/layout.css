@@ -450,6 +450,34 @@ img.cloud3 {
   font-weight: 600;
   color: var(--primaryoff);
 }
+.section-about {
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.section-about-bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background-color: var(--primarycolor);
+  z-index: -1;
+}
+
+.section-about .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Content wrapper appears above pinned section-about */
+.content-wrapper {
+  position: relative;
+  z-index: 9999;
+  background: #fff;
+}
 .content-image {
   position: relative;
   border-radius: 4rem;

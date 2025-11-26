@@ -110,9 +110,45 @@ $(document).ready(function () {
       scrollTrigger: {
         trigger: ".content-image",
         start: "top bottom",
-        markers: true,
         scrub: true,
       },
     }
   );
+
+  // Animate bg-primary background from bottom when section-about reaches 3% from top
+  gsap.fromTo(
+    ".section-about-bg",
+    {
+      height: "0%",
+    },
+    {
+      height: "100%",
+      ease: "none",
+      scrollTrigger: {
+        trigger: ".section-about",
+        start: "top 3%",
+        end: "+=100%",
+        markers: true,
+        scrub: 1,
+        pin: true,
+        pinSpacing: true,
+      },
+    }
+  );
+
+  // Keep section pinned after background fills, scale down and add border-radius
+  gsap.to(".section-about", {
+    scale: 0.8,
+    borderRadius: "4rem",
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".section-about",
+      start: "top -97%", // Starts right after first animation ends
+      end: "+=100%",
+      markers: true,
+      scrub: 1,
+      pin: true,
+      pinSpacing: false, // Allows next section to scroll over
+    },
+  });
 });

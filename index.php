@@ -1,5 +1,5 @@
 <?php include_once('header.php'); ?>
-<section class="content-wrapper section-padding section-especialize">
+<section class="section-padding section-especialize">
   <div class="container">
     <div class="row">
       <div class="col-lg-10 offset-lg-1 text-center">
@@ -15,6 +15,7 @@
   </div>
 </section>
 <section class="section-padding section-about">
+  <div class="section-about-bg"></div>
   <div class="container">
     <div class="row d-flex align-items-center">
       <div class="col-lg-6 pe-5">
@@ -28,6 +29,7 @@
             curated, revealing places and experiences known only to cultivated, well-connected locals. Discover the true
             essence of these lands through a journey tailored uniquely for you. Vivamus maximus magna quis accumsan
             tempor. </p>
+          <a href="#" class="btn btn-primary">Read More</a>
         </div>
       </div>
       <div class="col-lg-6">
